@@ -6,10 +6,17 @@ namespace myfirstCsharp
     {
         static void Main(string[] args)
         {
-            var number = "1234";
-            int i = Convert.ToInt32(number);
-            Console.WriteLine(i);
+            try
+            {
+                var number = "1234";
+                int b = Convert.ToByte(number);
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("The number could not convert to a byte");
 
+            }
         }
     }
 }
