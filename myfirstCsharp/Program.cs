@@ -40,6 +40,14 @@ namespace myfirstCsharp
             Console.WriteLine(names[1]);
             Console.WriteLine(names[2]);
 
+            
+            var middleName = "Ivanovich";
+            var title = "Mr.";
+
+            var fullName = string.Format("You can call me {0} {1}", title, middleName);
+            Console.WriteLine(fullName);
+
+
         }
     }
 
