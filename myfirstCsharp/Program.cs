@@ -6,9 +6,11 @@ namespace myfirstCsharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+            var number = "1234";
+            int i = Convert.ToInt32(number);
+            Console.WriteLine(i);
+
         }
     }
-
 }
 
