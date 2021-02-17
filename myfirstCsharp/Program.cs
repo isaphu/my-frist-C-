@@ -13,8 +13,11 @@ namespace myfirstCsharp
 
             Calculator calculator = new Calculator();
             var result = calculator.Add(1, 3);
-
             Console.WriteLine(result);
+
+            Age age = new Age();
+            var dob = age.CalculateForBOD(2021, 1994);
+            Console.WriteLine(dob);
         }
     }
 
