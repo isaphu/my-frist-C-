@@ -2,6 +2,12 @@
 
 namespace myfirstCsharp
 {
+    public enum ShippingMethod
+    {
+        RegularAirMail = 1,
+        ReggisteredAirMail = 2,
+        Express = 3
+    }
     class Program
     {
         static void Main(string[] args)
@@ -40,17 +46,33 @@ namespace myfirstCsharp
             Console.WriteLine(names[1]);
             Console.WriteLine(names[2]);
 
-            
+
             var middleName = "Ivanovich";
             var title = "Mr.";
 
             var fullName = string.Format("You can call me {0} {1}", title, middleName);
             Console.WriteLine(fullName);
 
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method); //get the shipping method
+
+            var methodId = 3;
+            Console.WriteLine((ShippingMethod)methodId); //convert an enum to and from an integer 
+
+            Console.WriteLine(method.ToString()); //use method toString to convert enum to str
+
+            var methodName = "Express"; //converting str to num by parsing 
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName)
+
+
+
+
+
+
+
 
         }
     }
-
 }
 
 
