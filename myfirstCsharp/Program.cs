@@ -119,13 +119,14 @@ namespace myfirstCsharp
             }
             */
 
-
+            /*
             var name = "Isa Phuyuthanon";
 
             for (var i = 0; i < name.Length; i++)
             {
                 Console.WriteLine(name[i]);
             }
+
 
             //will have the same output
             foreach (var character in name)
@@ -147,11 +148,35 @@ namespace myfirstCsharp
                 Console.Write("Type your name");
                 var input = Console.ReadLine();
 
-                if (String.IsNullOrWhiteSpace(input))
-                    break;
-                Console.WriteLine("@Echo: " + input);
-
+                if (!String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("@Echo: " + input);
+                    continue;
+                }
+                break;
             }
+            */
+
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+            {
+                Console.WriteLine(random.Next(1,10));
+            }
+
+            var numbersss = 0;
+
+            while (numbersss < 5)
+            {
+                numbersss += 2;
+            }
+
+
+            //array
+
+            var myNums = new[] { 3, 7, 9, 10, 20, 24, 25 };
+
+            //length
+            Console.WriteLine("Length: " + myNums.Length);
         }
     }
 }
