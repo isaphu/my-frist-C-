@@ -177,6 +177,13 @@ namespace myfirstCsharp
 
             //length
             Console.WriteLine("Length: " + myNums.Length);
+
+            //clear 
+            Array.Clear(myNums, 0, 2);
+
+            Console.WriteLine("Effect of clear");
+            foreach( var n in myNums)
+                Console.WriteLine(n);
         }
     }
 }
