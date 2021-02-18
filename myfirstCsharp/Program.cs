@@ -184,6 +184,14 @@ namespace myfirstCsharp
             Console.WriteLine("Effect of clear");
             foreach( var n in myNums)
                 Console.WriteLine(n);
+
+            //copy
+            int[] another = new int[3];
+            Array.Copy(myNums, another, 3);
+
+            Console.WriteLine("Effect of copy()");
+            foreach(var n in another)
+                Console.WriteLine(n);
         }
     }
 }
