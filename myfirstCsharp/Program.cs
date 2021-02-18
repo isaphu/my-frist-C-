@@ -192,6 +192,14 @@ namespace myfirstCsharp
             Console.WriteLine("Effect of copy()");
             foreach(var n in another)
                 Console.WriteLine(n);
+
+            //sort 
+            Array.Sort(myNums);
+
+            Console.WriteLine("Effect of Sort()");
+            foreach (var n in myNums)
+                Console.WriteLine(n);
+
         }
     }
 }
