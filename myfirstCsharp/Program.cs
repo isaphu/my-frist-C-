@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace myfirstCsharp
 {
@@ -206,6 +207,21 @@ namespace myfirstCsharp
             Console.WriteLine("Effect of Reverse()");
             foreach(var n in myNums)
                 Console.WriteLine(n);
+
+            //list
+            /*
+            var numbers = new List<int>();
+            useful method:
+            Add()
+            AddRange()
+            Remove()
+            RemoveAt()
+            */
+
+            var myFamily = new List<int>() { 1, 2, 3, 4, 5 };
+            myFamily.Add(1);
+            myFamily.AddRange(new int[3] { 5, 6, 7 });
+   
         }
     }
 }
