@@ -200,6 +200,12 @@ namespace myfirstCsharp
             foreach (var n in myNums)
                 Console.WriteLine(n);
 
+            //reverse()
+            Array.Reverse(myNums);
+
+            Console.WriteLine("Effect of Reverse()");
+            foreach(var n in myNums)
+                Console.WriteLine(n);
         }
     }
 }
